@@ -150,7 +150,7 @@ document.getElementById('submit_info').addEventListener('submit', function(e) {
     const xg = document.getElementById('contactName').value;
     const xd = document.getElementById('contactPhone').value;
 
-    const url = 'result.html?' + new URLSearchParams({
+    const url = 'result?' + new URLSearchParams({
         na,nm,nd,np,ly,li,lr,ld,fy,fi,fr,fd,wp,ws,wq,gy,lc,fc,xg,xd
     });
     window.location.href = url;
