@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="utf-8" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<!-- Bootstrap4 -->
+    	<link rel="stylesheet" href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/twitter-bootstrap/4.6.1/css/bootstrap.min.css">
+    	<script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js"></script>
+    	<script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/popper.js/2.11.2/umd/popper.min.js"></script>
+    	<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/twitter-bootstrap/4.6.1/js/bootstrap.min.js"></script>
+    	<title>离校登记表快速填充</title>
+    </head>
+    <body style="background: #f5f6fa;">
+    	<div class="container">
+    		<h4 class="text-center text-primary"><br/><b>NENU-IST</b></h4>
+    		<h5 class="text-center">离校登记表快速填充</h5>
+    		<br/>
+    		<div class="card card-body">
+    			<h6 class="text-center" data-toggle="collapse" data-target="#intro" style="cursor: pointer;">使用说明</h6>
+    			<div id="intro" class="collapse show">
+    			    <h6>1.<font class="text-success">“年”“月”“日”“时”请直接填写整数不用加单位，“省”“市”“区”请直接填写名称不用加“省市区”后缀</font></h6>
+                    <h6>2.<font class="text-success">需要填空的部分请保证全部填写，离校返校交通如没有请填“无”</font></h6>
+    			    <h6>3.最终生成内容及效果均与本项目和作者无关</h6>
+    			</div>
+    		</div>
+    		<form class="needs-validation" novalidate id="submit_info"><br/>
+        <div class="row g-3 mb-3">
+            <div class="col-md">
+                <label for="name" class="form-label">姓名</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="col-md">
+                <label for="major" class="form-label">专业</label>
+                <input type="text" class="form-control" id="major" required>
+            </div>
+        </div>
+        <div class="row g-3 mb-3">
+            <div class="col-md">
+                <label for="studentId" class="form-label">学号</label>
+                <input type="text" class="form-control" id="studentId" required>
+            </div>
+            <div class="col-md">
+                <label for="phone" class="form-label">手机号</label>
+                <input type="text" class="form-control" id="phone" required>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">离校日期</label>
+            <div class="row g-2">
+                <div class="col-auto"><input type="text" class="form-control" id="leaveYear" placeholder="年" required></div>
+                <div class="col-auto"><input type="text" class="form-control" id="leaveMonth" placeholder="月" required></div>
+                <div class="col-auto"><input type="text" class="form-control" id="leaveDay" placeholder="日" required></div>
+                <div class="col-auto"><input type="text" class="form-control" id="leaveHour" placeholder="时" required></div>
+            </div>
+                <div style="color: #8f8f8f;line-height: 2.5;">至</div>
+            <div class="row g-2">
+                <div class="col-auto"><input type="text" class="form-control" id="backYear" placeholder="年" required></div>
+                <div class="col-auto"><input type="text" class="form-control" id="backMonth" placeholder="月" required></div>
+                <div class="col-auto"><input type="text" class="form-control" id="backDay" placeholder="日" required></div>
+                <div class="col-auto"><input type="text" class="form-control" id="backHour" placeholder="时" required></div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">去往何处</label>
+            <div class="row g-2">
+                <div class="col-auto"><input type="text" class="form-control" id="province" placeholder="省" required></div>
+                <div class="col-auto"><input type="text" class="form-control" id="city" placeholder="市" required></div>
+                <div class="col-auto"><input type="text" class="form-control" id="district" placeholder="区" required></div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="reason" class="form-label">离校原因</label>
+            <input type="text" class="form-control" id="reason" required>
+        </div>
+        <div class="row g-3 mb-3">
+            <div class="col-md">
+                <label for="departureTransport" class="form-label">离校交通车次</label>
+                <input type="text" class="form-control" id="departureTransport" required>
+            </div>
+            <div class="col-md">
+                <label for="returnTransport" class="form-label">返校交通车次</label>
+                <input type="text" class="form-control" id="returnTransport" required>
+            </div>
+        </div>
+        <div class="row g-3 mb-3">
+            <div class="col-md">
+                <label for="contactName" class="form-label">离校第一联系人</label>
+                <input type="text" class="form-control" id="contactName" required>
+            </div>
+            <div class="col-md">
+                <label for="contactPhone" class="form-label">离校联系人电话</label>
+                <input type="text" class="form-control" id="contactPhone" required>
+            </div>
+        </div>
+        <br/>
+        <button style="width:100%;" type="submit" class="btn btn-success">立即生成</button>              
+    </form>
+    	</div>
+        
+
+
+
+    	<div class="container">
+    		<br><hr><p class="text-center">作者：Gary <a href="https://github.com/garyyang777/lixiaodengjibiao" target="_blank">源代码</a><br/></p>
+    	</div>
+    	<div class="modal fade" id="copy_success">
+    		<div class="modal-dialog">
+    			<div class="modal-content">
+    				<div class="modal-body">
+    					<h5>链接已复制到您的剪贴板，在浏览器中粘贴链接可直接访问生成页面</h5>
+    					<h5 class="text-danger">功能测试中，不保证完全成功</h5>
+    					<h5 class="text-center"><br/><b><a href="#ShutdownManual" data-dismiss="modal">我知道了</a></b></h5>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+
+
+<script>
+document.getElementById('submit_info').addEventListener('submit', function(e) {
+    e.preventDefault(); 
+
+    const na = document.getElementById('name').value;
+    const nm = document.getElementById('major').value;
+    const nd = document.getElementById('studentId').value;
+    const np = document.getElementById('phone').value;
+
+
+    const ly = document.getElementById('leaveYear').value;
+    const li = document.getElementById('leaveMonth').value;
+    const lr = document.getElementById('leaveDay').value;
+    const ld = document.getElementById('leaveHour').value;
+
+    const fy = document.getElementById('backYear').value;
+    const fi = document.getElementById('backMonth').value;
+    const fr = document.getElementById('backDay').value;
+    const fd = document.getElementById('backHour').value;
+
+
+
+    
+    const wp = document.getElementById('province').value;
+    const ws = document.getElementById('city').value;
+    const wq = document.getElementById('district').value;
+
+
+    const gy = document.getElementById('reason').value;
+    const lc = document.getElementById('departureTransport').value;
+    const fc = document.getElementById('returnTransport').value;
+    const xg = document.getElementById('contactName').value;
+    const xd = document.getElementById('contactPhone').value;
+
+    const url = 'result.html?' + new URLSearchParams({
+        na,nm,nd,np,ly,li,lr,ld,fy,fi,fr,fd,wp,ws,wq,gy,lc,fc,xg,xd
+    });
+    window.location.href = url;
+});
+</script>
+
+
+
+
+    </body>
+</html>
