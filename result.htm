@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="./css/style.css" />
+		<style>#app{display: none;}#load{display: block;text-align: center;line-height: 95vh;font-size: 40px;}</style>
+	</head>
+	<body>
+		<div id="app">
+			<div class="stl_ stl_02">
+				<div class="stl_03">
+					<object data="./img/background.svg" type="image/svg+xml" class="stl_04" style="position:absolute; width:49.5833em; height:70.0833em;">
+						<embed src="./img/background.svg" type="image/svg+xml" />
+					</object>
+				</div>
+				<div class="stl_view">
+					<div class="stl_05 stl_06">
+						<div class="stl_01" style="left:18.36em;top:6.3072em;"><span class="stl_07 stl_08 stl_09" style="font-weight:bold;">学生离校登记表 &nbsp;</span></div>
+					    <div class="stl_01" style="left:9.19em;top:10.8908em;"><span class="stl_10 stl_08 stl_11">姓名 &nbsp;</span><span class="stl_10 stl_08 stl_11 inp_d" id="in_na"></span></div>
+					    <div class="stl_01" style="left:26.59em;top:10.8908em;"><span class="stl_10 stl_08 stl_11">专业 &nbsp;</span><span class="stl_10 stl_08 stl_11 inp_d" id="in_nm"></span></div>
+					    <div class="stl_01" style="left:9.19em;top:13.3008em;"><span class="stl_10 stl_08 stl_11">学号 &nbsp;</span><span class="stl_10 stl_08 stl_11 inp_d" id="in_nd"></span></div>
+					    <div class="stl_01" style="left:25.71em;top:13.3008em;"><span class="stl_10 stl_08 stl_12">手机号码 &nbsp;</span><span class="stl_10 stl_08 stl_11 inp_d" id="in_np"></span></div>
+					    <div class="stl_01" style="left:8.31em;top:15.7008em;"><span class="stl_10 stl_08 stl_12">离校日期 &nbsp;</span><span class="stl_10 stl_08 stl_12 inp_d" id="in_ly"></span></div>
+					    <div class="stl_01" style="left:8.31em;top:18.1008em;"><span class="stl_10 stl_08 stl_12">去往何处 &nbsp;</span><span class="stl_10 stl_08 stl_12 inp_d" id="in_wp"></span></div>
+					    <div class="stl_01" style="left:8.31em;top:20.5107em;"><span class="stl_10 stl_08 stl_12">离校原因 &nbsp;</span><span class="stl_10 stl_08 stl_12 inp_d" id="in_gy"></span></div>
+					    <div class="stl_01" style="left:17.12em;top:15.7008em;"><span class="stl_10 stl_08 stl_13">年</span><span class="stl_10 stl_08 stl_13 inp_d" id="in_li"></span></div>
+					    <div class="stl_01" style="left:20.1499em;top:15.7008em;"><span class="stl_10 stl_08 stl_13">月</span><span class="stl_10 stl_08 stl_13 inp_d" id="in_lr"></span></div>
+					    <div class="stl_01" style="left:22.81em;top:15.7008em;"><span class="stl_10 stl_08 stl_13">日</span><span class="stl_10 stl_08 stl_13 inp_d" id="in_ld"></span></div>
+					    <div class="stl_01" style="left:25.07em;top:15.7008em;"><span class="stl_10 stl_08 stl_14" style="word-spacing:0.2447em;">点— <span class="inp_d" id="in_fy"></span> 年</span><span class="stl_10 stl_08 stl_14 inp_d" id="in_fi"></span></div>
+					    <div class="stl_01" style="left:28.06em;top:18.1008em;"><span class="stl_10 stl_08 stl_13">市</span><span class="stl_10 stl_08 stl_13 inp_d" id="in_wq"></span></div>
+					    <div class="stl_01" style="left:32em;top:15.7008em;"><span class="stl_10 stl_08 stl_13">月</span><span class="stl_10 stl_08 stl_13 inp_d" id="in_fr"></span></div>
+					    <div class="stl_01" style="left:35.06em;top:15.7008em;"><span class="stl_10 stl_08 stl_13">日</span><span class="stl_10 stl_08 stl_13 inp_d" id="in_fd"></span></div>
+					    <div class="stl_01" style="left:38.12em;top:15.7008em;"><span class="stl_10 stl_08 stl_13">点</span></div>
+					    <div class="stl_01" style="left:20.62em;top:18.1008em;"><span class="stl_10 stl_08 stl_13">省</span><span class="stl_10 stl_08 stl_13 inp_d" id="in_ws"></span></div>
+					    <div class="stl_01" style="left:34.62em;top:18.1008em;"><span class="stl_10 stl_08 stl_13">区</span></div>
+					    <div class="stl_01" style="left:14.15em;top:22.9107em;"><span class="stl_10 stl_08 stl_12">离校交通 &nbsp;</span></div>
+					    <div class="stl_01" style="left:14.15em;top:25.3208em;"><span class="stl_10 stl_08 stl_12">返校交通 &nbsp;</span></div>
+					    <div class="stl_01" style="left:19.2em;top:22.9008em;"><span class="stl_10 stl_08 stl_14">飞机</span><span class="stl_15 stl_08 stl_16">/</span><span class="stl_10 stl_08 stl_14">火车</span><span class="stl_15 stl_08 stl_17">/</span><span class="stl_10 stl_08 stl_18">私家车</span><span class="stl_15 stl_08 stl_16">/</span><span class="stl_10 stl_08 stl_11">客车 &nbsp;</span></div>
+					    <div class="stl_01" style="left:30.4099em;top:22.9107em;"><span class="stl_10 stl_08 stl_12">具体车次 &nbsp;</span><span class="stl_10 stl_08 stl_12 inp_d" id="in_lc"></span></div>
+					    <div class="stl_01" style="left:30.4099em;top:25.3208em;"><span class="stl_10 stl_08 stl_12">具体车次 &nbsp;</span><span class="stl_10 stl_08 stl_12 inp_d" id="in_fc"></span></div>
+					    <div class="stl_01" style="left:8.31em;top:24.1208em;"><span class="stl_10 stl_08 stl_12">交通信息 &nbsp;</span></div>
+					    <div class="stl_01" style="left:20.95em;top:25.396em;"><span class="stl_15 stl_08 stl_13">/</span></div>
+					    <div class="stl_01" style="left:23.04em;top:25.396em;"><span class="stl_15 stl_08 stl_13">/</span></div>
+					    <div class="stl_01" style="left:26em;top:25.396em;"><span class="stl_15 stl_08 stl_13">/</span></div>
+					    <div class="stl_01" style="left:19.2em;top:25.3208em;"><span class="stl_10 stl_08 stl_19" style="word-spacing:0.1445em;">飞机 火车 私家车 客车 &nbsp;</span></div>
+					    <div class="stl_01" style="left:7.87em;top:27.7208em;"><span class="stl_10 stl_08 stl_20">辅导员意见 &nbsp;</span></div>
+					    <div class="stl_01" style="left:24.84em;top:27.7208em;"><span class="stl_10 stl_08 stl_21">主管领导意见 &nbsp;</span></div>
+					    <div class="stl_01" style="left:18.05em;top:31.2401em;"><span class="stl_22 stl_08 stl_13">学生离校安全责任书 &nbsp;</span></div>
+					    <div class="stl_01" style="left:8.36em;top:33.5008em;z-index:54;"><span class="stl_10 stl_08 stl_14">为进一步维护学校的安全稳定和正常秩序</span><span class="stl_10 stl_08 stl_23">，</span><span class="stl_10 stl_08 stl_11">切</span><span class="stl_10 stl_08 stl_24">实加强对学生的安全教育和日常管理</span><span class="stl_10 stl_08 stl_25">，</span><span class="stl_10 stl_08 stl_11">确</span><span class="stl_10 stl_08 stl_26">保广 &nbsp;</span></div>
+					    <div class="stl_01" style="left:6.61em;top:34.8008em;z-index:98;"><span class="stl_10 stl_08 stl_14">大同学的人身财产安全</span><span class="stl_10 stl_08 stl_27">，</span><span class="stl_10 stl_08 stl_11">根</span><span class="stl_10 stl_08 stl_28">据</span><span class="stl_10 stl_08 stl_11">《</span><span class="stl_10 stl_08 stl_14">普通高等学校学生管理规定</span><span class="stl_10 stl_08 stl_27">》</span><span class="stl_10 stl_08 stl_29">、</span><span class="stl_10 stl_08 stl_11">《</span><span class="stl_10 stl_08 stl_14">东北师范大学学生手册</span><span class="stl_10 stl_08 stl_27">》</span><span class="stl_10 stl_08 stl_30">、</span><span class="stl_10 stl_08 stl_11">《</span><span class="stl_10 stl_08 stl_11">东 &nbsp;</span></div>
+					    <div class="stl_01" style="left:6.61em;top:36.1008em;"><span class="stl_10 stl_08 stl_31">北师范大学学生请销假管理规定》等文件精神，结合我院实际，特制定本安全责任书。 &nbsp;</span></div>
+					    <div class="stl_01" style="left:8.36em;top:38.6907em;"><span class="stl_10 stl_08 stl_32">本人于</span><span class="stl_15 stl_08 stl_33"><span class="inp_d inp_d2" id="in2_ly"></span></span><span class="stl_10 stl_08 stl_11">年</span><span class="stl_15 stl_08 stl_34"><span class="inp_d inp_d2" id="in2_li"></span></span><span class="stl_10 stl_08 stl_26">月</span><span class="stl_15 stl_08 stl_33"><span class="inp_d inp_d2" id="in2_lr"></span></span><span class="stl_10 stl_08 stl_14">日至</span><span class="stl_15 stl_08 stl_34"><span class="inp_d inp_d2" id="in2_fy"></span></span><span class="stl_10 stl_08 stl_11">年</span><span class="stl_15 stl_08 stl_33"><span class="inp_d inp_d2" id="in2_fi"></span></span><span class="stl_10 stl_08 stl_35">月</span><span class="stl_15 stl_08 stl_33"><span class="inp_d inp_d2" id="in2_fr"></span></span><span class="stl_10 stl_08 stl_14">日外出至</span><span class="stl_15 stl_08 stl_36"><span class="inp_d inp_d2" id="in2_wp"></span></span><span class="stl_10 stl_08 stl_26">省</span><span class="stl_15 stl_08 stl_26">; &nbsp;</span></div>
+					    <div class="stl_01" style="left:6.61em;top:40.0008em;"><span class="stl_10 stl_08 stl_20">离校期间遵守以下规定： &nbsp;</span></div>
+					    <div class="stl_01" style="left:6.61em;top:41.2907em;"><span class="stl_10 stl_08 stl_26">（</span><span class="stl_15 stl_08 stl_37">1</span><span class="stl_10 stl_08 stl_38">）遵纪守法，不从事或者多与有损大学生形象、有损社会公德的活动； &nbsp;</span></div>
+					    <div class="stl_01" style="left:6.61em;top:42.5907em;"><span class="stl_10 stl_08 stl_26">（</span><span class="stl_15 stl_08 stl_37">2</span><span class="stl_10 stl_08 stl_38">）自觉遵守公共秩序，不到安全防范措施不得力、设施建设不完善的地方； &nbsp;</span></div>
+					    <div class="stl_01" style="left:6.61em;top:43.8907em;"><span class="stl_10 stl_08 stl_26">（</span><span class="stl_15 stl_08 stl_37">3</span><span class="stl_10 stl_08 stl_39">）注意饮食卫生，注意交通安全，严禁乘坐无证、无照的交通工具 &nbsp;</span></div>
+					    <div class="stl_01" style="left:6.61em;top:45.1907em;"><span class="stl_10 stl_08 stl_26">（</span><span class="stl_15 stl_08 stl_37">4</span><span class="stl_10 stl_08 stl_35">）将于</span><span class="stl_15 stl_08 stl_34"><span class="inp_d inp_d2" id="in2_fyp1"></span></span><span class="stl_10 stl_08 stl_26">年</span><span class="stl_15 stl_08 stl_33"><span class="inp_d inp_d2" id="in2_fip1"></span></span><span class="stl_10 stl_08 stl_35">月</span><span class="stl_15 stl_08 stl_34"><span class="inp_d inp_d2" id="in2_frp1"></span></span><span class="stl_10 stl_08 stl_35">日</span><span class="stl_15 stl_08 stl_33"><span class="inp_d inp_d2" id="in2_fdp1"></span></span><span class="stl_10 stl_08 stl_40">时前当面向辅导员老师确认返校，如有特殊情况需 &nbsp;</span></div>
+					    <div class="stl_01" style="left:6.61em;top:46.5008em;"><span class="stl_10 stl_08 stl_20">延期返校则提前以邮件或短信告知辅导员老师，否则按旷课处理； &nbsp;</span></div>
+					    <div class="stl_01" style="left:6.61em;top:47.7908em;"><span class="stl_10 stl_08 stl_26">（</span><span class="stl_15 stl_08 stl_37">5</span><span class="stl_10 stl_08 stl_14">）离校后第一联系人的电话</span><span class="stl_15 stl_08 stl_41"><span class="inp_d inp_d2" id="in2_xd" style="padding:0 1.2em"></span></span><span class="stl_10 stl_08 stl_14">，与本人关系</span><span class="stl_15 stl_08 stl_42"><span class="inp_d inp_d2" id="in2_xg"></span></span><span class="stl_10 stl_08 stl_42">。 &nbsp;</span></div>
+					    <div class="stl_01" style="left:8.36em;top:50.4008em;"><span class="stl_10 stl_08 stl_14">本人己经明确以上所有规定</span><span class="stl_10 stl_08 stl_43">，</span><span class="stl_10 stl_08 stl_11">并</span><span class="stl_10 stl_08 stl_14">保证认真遵守</span><span class="stl_10 stl_08 stl_44">。</span><span class="stl_10 stl_08 stl_11">若</span><span class="stl_10 stl_08 stl_32">有违反</span><span class="stl_10 stl_08 stl_43">，</span><span class="stl_10 stl_08 stl_11">出</span><span class="stl_10 stl_08 stl_45">现的后果和问题自行负责</span><span class="stl_10 stl_08 stl_44">，</span><span class="stl_10 stl_08 stl_44">并 &nbsp;</span></div>
+					    <div class="stl_01" style="left:6.61em;top:51.7008em;"><span class="stl_10 stl_08 stl_14">愿意接受相应处分</span><span class="stl_10 stl_08 stl_46">，</span><span class="stl_10 stl_08 stl_11">若</span><span class="stl_10 stl_08 stl_32">有突发</span><span class="stl_10 stl_08 stl_47">、</span><span class="stl_10 stl_08 stl_11">偶</span><span class="stl_10 stl_08 stl_14">发性侵害及其他意外因素造成的人身伤害发生</span><span class="stl_10 stl_08 stl_47">，</span><span class="stl_10 stl_08 stl_11">与</span><span class="stl_10 stl_08 stl_20">学校和学院 &nbsp;</span></div>
+					    <div class="stl_01" style="left:6.61em;top:53.0008em;"><span class="stl_10 stl_08 stl_20">无关。 &nbsp;</span></div>
+					    <div class="stl_01" style="left:28.9299em;top:55.5907em;"><span class="stl_10 stl_08 stl_14">学生离校签名</span><span class="stl_15 stl_08 stl_48"><span class="inp_d inp_d2" id="in2_na" style="padding:0 2.5em"></span>(</span><span class="stl_10 stl_08 stl_14">指纹</span><span class="stl_15 stl_08 stl_14">) &nbsp;</span></div>
+					    <div class="stl_01" style="left:29.0299em;top:58.1907em;"><span class="stl_10 stl_08 stl_14">学生返校签名</span><span class="stl_15 stl_08 stl_49">____________________ &nbsp;</span></div>
+					    <div class="stl_01" style="left:31.6799em;top:60.8008em;"><span class="stl_10 stl_08 stl_13 inp_d" id="now_y"></span>&emsp;<span class="stl_10 stl_08 stl_13">年</span><span class="stl_10 stl_08 stl_13 inp_d" id="now_i"></span></div>
+					    <div class="stl_01" style="left:37.75em;top:60.8008em;"><span class="stl_10 stl_08 stl_13">月</span><span class="stl_10 stl_08 stl_13 inp_d" id="now_d"></span></div>
+					    <div class="stl_01" style="left:40.81em;top:60.8008em;"><span class="stl_10 stl_08 stl_13">日</span></div>
+					    <div class="stl_01" style="left:29.87em;top:62.1008em;"><span class="stl_10 stl_08 stl_20">东北师范大学信息科学与技术学院 &nbsp;</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="load">生成中……</div>
+		<script type="text/javascript" src="./creater/creater.js"></script>
+	</body>
+</html>

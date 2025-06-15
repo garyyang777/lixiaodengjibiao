@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/twitter-bootstrap/4.6.1/css/bootstrap.min.css">
+        <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/popper.js/2.11.2/umd/popper.min.js"></script>
+        <script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/twitter-bootstrap/4.6.1/js/bootstrap.min.js"></script>
+        <title>离校登记表模拟生成</title>
+    </head>
+    <body style="background: #f5f6fa;">
+        <div class="container card card-body">
+            <br/>
+            <h4 class="text-center text-primary"><b>NENU-IST</b></h4>
+            <h5 class="text-center">离校登记表模拟生成</h5>
+            <br/>
+            <form class="needs-validation" novalidate id="submit_info">
+                <br/>
+                <div class="row g-3 mb-3">
+                    <div class="col-md">
+                        <label for="name" class="form-label">姓名</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="col-md">
+                        <label for="major" class="form-label">专业</label>
+                        <input type="text" class="form-control" id="major" required>
+                    </div>
+                </div>
+                <div class="row g-3 mb-3">
+                    <div class="col-md">
+                        <label for="studentId" class="form-label">学号</label>
+                        <input type="text" class="form-control" id="studentId" required>
+                    </div>
+                    <div class="col-md">
+                        <label for="phone" class="form-label">手机号</label>
+                        <input type="text" class="form-control" id="phone" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">离校日期</label>
+                    <div class="row g-2">
+                        <div class="col-auto"><input type="text" class="form-control" id="leaveYear" placeholder="" required></div><span style="color: #8f8f8f;line-height: 2;">年</span>
+                        <div class="col-auto"><input type="text" class="form-control" id="leaveMonth" placeholder="" required></div><span style="color: #8f8f8f;line-height: 2;">月</span>
+                        <div class="col-auto"><input type="text" class="form-control" id="leaveDay" placeholder="" required></div><span style="color: #8f8f8f;line-height: 2;">日</span>
+                        <div class="col-auto"><input type="text" class="form-control" id="leaveHour" placeholder="" required></div><span style="color: #8f8f8f;line-height: 2;">点</span>
+                    </div>
+                    <div style="color: #8f8f8f;line-height: 2.5;">至</div>
+                    <div class="row g-2">
+                        <div class="col-auto"><input type="text" class="form-control" id="backYear" placeholder="" required></div><span style="color: #8f8f8f;line-height: 2;">年</span>
+                        <div class="col-auto"><input type="text" class="form-control" id="backMonth" placeholder="" required></div><span style="color: #8f8f8f;line-height: 2;">月</span>
+                        <div class="col-auto"><input type="text" class="form-control" id="backDay" placeholder="" required></div><span style="color: #8f8f8f;line-height: 2;">日</span>
+                        <div class="col-auto"><input type="text" class="form-control" id="backHour" placeholder="" required></div><span style="color: #8f8f8f;line-height: 2;">点</span>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">去往何处</label>
+                    <div class="row g-2">
+                        <div class="col-auto"><input type="text" class="form-control" id="province" placeholder="" required></div><span style="color: #8f8f8f;line-height: 2;">省</span>
+                        <div class="col-auto"><input type="text" class="form-control" id="city" placeholder="" required></div><span style="color: #8f8f8f;line-height: 2;">市</span>
+                        <div class="col-auto"><input type="text" class="form-control" id="district" placeholder="" required></div><span style="color: #8f8f8f;line-height: 2;">区</span>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="reason" class="form-label">离校原因</label>
+                    <input type="text" class="form-control" id="reason" required>
+                </div>
+                <div class="row g-3 mb-3">
+                    <div class="col-md">
+                        <label for="departureTransport" class="form-label">离校交通车次</label>
+                        <input type="text" class="form-control" id="departureTransport" required>
+                    </div>
+                    <div class="col-md">
+                        <label for="returnTransport" class="form-label">返校交通车次</label>
+                        <input type="text" class="form-control" id="returnTransport" required>
+                    </div>
+                </div>
+                <div class="row g-3 mb-3">
+                    <div class="col-md">
+                        <label for="contactPhone" class="form-label">离校第一联系人电话</label>
+                        <input type="text" class="form-control" id="contactPhone" required>
+                    </div>
+                    <div class="col-md">
+                        <label for="contactName" class="form-label">本人与离校联系人的关系</label>
+                        <input type="text" class="form-control" id="contactName" required>
+                    </div>
+                </div>
+                <br/><button style="width:100%;" type="submit" class="btn btn-lg btn-success">立即模拟</button><br/>&nbsp;
+            </form>
+        </div>
+        <p class="text-center text-secondary"><small>承诺不会存储和传输您输入的任何内容<br/>© 2025 A boring person</small></p>
+        <script type="text/javascript">
+            document.getElementById("submit_info").addEventListener("submit",function(e){e.preventDefault();var e=document.getElementById("name").value,t=document.getElementById("major").value,n=document.getElementById("studentId").value,d=document.getElementById("phone").value,l=document.getElementById("leaveYear").value,u=document.getElementById("leaveMonth").value,a=document.getElementById("leaveDay").value,m=document.getElementById("leaveHour").value,o=document.getElementById("backYear").value,c=document.getElementById("backMonth").value,v=document.getElementById("backDay").value,y=document.getElementById("backHour").value,r=document.getElementById("province").value,g=document.getElementById("city").value,E=document.getElementById("district").value,I=document.getElementById("reason").value,B=document.getElementById("departureTransport").value,i=document.getElementById("returnTransport").value,s=document.getElementById("contactName").value,f=document.getElementById("contactPhone").value;e&&t&&n&&d&&l&&u&&a&&m&&o&&c&&v&&y&&g&&E&&I&&B&&i&&s&&f?(e="result.htm?"+new URLSearchParams({na:e,nm:t,nd:n,np:d,ly:l,li:u,lr:a,ld:m,fy:o,fi:c,fr:v,fd:y,wp:r,ws:g,wq:E,gy:I,lc:B,fc:i,xg:s,xd:f}),window.location.href=e):(alert("提示：有未填的必填项，请检查"),$("#if_success").modal("hide"))});
+        </script>
+    </body>
+</html>
